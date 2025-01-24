@@ -1,0 +1,9 @@
+# Ignore directories recursively
+**/bin/
+**/obj/
+.vs/
+.idea/
+
+
+# Ignore specific files
+temporary.txt
