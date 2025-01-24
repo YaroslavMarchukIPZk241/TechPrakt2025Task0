@@ -2,7 +2,11 @@
 class Program
 {
     static void Main(string[] args)
-    {      
-            Console.WriteLine(int.Parse(Console.ReadLine()) + int.Parse(Console.ReadLine()));        
+    {
+        
+        if (double.TryParse(Console.ReadLine(), out double a) && double.TryParse(Console.ReadLine(), out double b))
+            Console.WriteLine($"{a} + {b} = {a+b}");
+        else
+            Console.WriteLine("Некоректний ввід");
     }
 }
